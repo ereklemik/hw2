@@ -6,5 +6,6 @@ for i in test_list:
     counter = counter + 1
 print("Length of list is : " + str(counter))
 
-print("wanna get merge conflict")
+test_list.sort()
+print("Smallest element is:", list1[0])
 
