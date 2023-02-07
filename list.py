@@ -7,3 +7,7 @@ for i in test_list:
 print("Length of list is : " + str(counter))
 
 
+
+test_list.sort()
+ 
+print("Smallest element is:", test_list[0])
