@@ -24,4 +24,5 @@ result = p.run("ps aux | awk '/^root/ { print $11 }'", capture_output=True, text
 root_processes = result.stdout.splitlines()
 root_processes_dict = {"root": root_processes}
 
-print(root_processes_dict)
+json_string = json.dumps(root_processes_dict, indent=4)
+print(json_string)
